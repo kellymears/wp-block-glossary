@@ -1,0 +1,23 @@
+{
+	"name": "tinypixel/block-glossary",
+	"type": "wordpress-plugin",
+	"version": "0.1.0",
+	"description": "Definition list block for the WordPress 5 block editor",
+	"keywords": [
+		"laravel",
+		"blade",
+		"template",
+		"wordpress",
+		"gutenberg",
+		"blocks"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Kelly Mears",
+			"homepage": "https://tinypixel.dev"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

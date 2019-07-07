@@ -21,6 +21,7 @@ mix.block(
 )
 
 mix.postCss(glossary.css.src, glossary.css.dist, [
+	require('stylelint'),
 	require('postcss-nested'),
 	require('postcss-preset-env'),
 	require('tailwindcss')(tailwindConfig),

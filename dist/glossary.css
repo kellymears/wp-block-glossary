@@ -1,3 +1,7 @@
+.wp-block-tinyblocks-glossary {
+  display: block;
+}
+
 .wp-block-tinyblocks-glossary .editor-block-list__layout {
   padding: 0.5rem;
 }
@@ -5,6 +9,9 @@
 .wp-block-tinyblocks-glossary .editor-block-list__layout .block-editor-block-list__block-edit > div {
   display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   width: 100%;
 }
 
@@ -14,6 +21,8 @@
 }
 
 .wp-block-tinyblocks-glossary .editor-block-list__layout .block-editor-block-list__block-edit > div > dd {
+  display: -webkit-box;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;

@@ -274,17 +274,7 @@ module.exports = _typeof;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _glossary_editor_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./glossary/editor.js */ "./src/glossary/editor.js");
-/**
- * Gutenberg Blocks
- *
- * All blocks related JavaScript files should be imported here.
- * You can create a new block folder in this dir and include code
- * for that block here as well.
- *
- * All blocks should be included here since this is the file that
- * Webpack is compiling as the input file.
- */
+/* harmony import */ var _glossary_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./glossary/editor */ "./src/glossary/editor.js");
 
 
 /***/ }),
@@ -422,7 +412,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("dl", {
-        className: "wp-block-tinyblocks-glossary dl"
+        className: "wp-block-tinyblocks-glossary"
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(_imports__WEBPACK_IMPORTED_MODULE_6__["InnerBlocks"], {
         allowedBlocks: ALLOWED_BLOCKS
       }));
@@ -580,7 +570,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kellymears/code/sites/ndncollective.org/ndncollective.org/web/app/plugins/wp-block-description-list/src/entry.js */"./src/entry.js");
+module.exports = __webpack_require__(/*! /Users/kellymears/code/sites/ndncollective.org/ndncollective.org/web/app/plugins/wp-block-glossary/src/entry.js */"./src/entry.js");
 
 
 /***/ }),

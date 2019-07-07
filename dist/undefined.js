@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kellymears/code/sites/ndncollective.org/ndncollective.org/web/app/plugins/wp-block-description-list/src/entry.css */"./src/entry.css");
+module.exports = __webpack_require__(/*! /Users/kellymears/code/sites/ndncollective.org/ndncollective.org/web/app/plugins/wp-block-glossary/src/entry.css */"./src/entry.css");
 
 
 /***/ })

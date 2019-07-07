@@ -123,7 +123,6 @@ module.exports = {
 				'"Noto Color Emoji"',
 			],
 			serif: [
-				'Eskorte',
 				'Georgia',
 				'Cambria',
 				'"Times New Roman"',
