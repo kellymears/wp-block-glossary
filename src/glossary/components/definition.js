@@ -32,7 +32,6 @@ class Definition extends Component {
 
     return (
 			<Fragment>
-
 				<RichText
 					tagName="dt"
 					className="wp-block-tinyblocks-glossary-term"

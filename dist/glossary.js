@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -563,14 +563,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!****************************!*\
   !*** multi ./src/entry.js ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kellymears/code/sites/ndncollective.org/ndncollective.org/web/app/plugins/wp-block-glossary/src/entry.js */"./src/entry.js");
+module.exports = __webpack_require__(/*! /Users/kellymears/code/packages/acorn-models/web/app/plugins/wp-block-glossary/src/entry.js */"./src/entry.js");
 
 
 /***/ }),
