@@ -576,79 +576,79 @@ module.exports = __webpack_require__(/*! /Users/kellymears/code/packages/acorn-m
 /***/ }),
 
 /***/ "@wordpress/block-editor":
-/*!*********************************!*\
-  !*** external "wp.blockEditor" ***!
-  \*********************************/
+/*!**********************************************!*\
+  !*** external {"this":["wp","blockEditor"]} ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.blockEditor;
+(function() { module.exports = this["wp"]["blockEditor"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/blocks":
-/*!****************************!*\
-  !*** external "wp.blocks" ***!
-  \****************************/
+/*!*****************************************!*\
+  !*** external {"this":["wp","blocks"]} ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.blocks;
+(function() { module.exports = this["wp"]["blocks"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/components":
-/*!********************************!*\
-  !*** external "wp.components" ***!
-  \********************************/
+/*!*********************************************!*\
+  !*** external {"this":["wp","components"]} ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.components;
+(function() { module.exports = this["wp"]["components"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/compose":
-/*!*****************************!*\
-  !*** external "wp.compose" ***!
-  \*****************************/
+/*!******************************************!*\
+  !*** external {"this":["wp","compose"]} ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.compose;
+(function() { module.exports = this["wp"]["compose"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/data":
-/*!**************************!*\
-  !*** external "wp.data" ***!
-  \**************************/
+/*!***************************************!*\
+  !*** external {"this":["wp","data"]} ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.data;
+(function() { module.exports = this["wp"]["data"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/element":
-/*!*****************************!*\
-  !*** external "wp.element" ***!
-  \*****************************/
+/*!******************************************!*\
+  !*** external {"this":["wp","element"]} ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.element;
+(function() { module.exports = this["wp"]["element"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/i18n":
-/*!**************************!*\
-  !*** external "wp.i18n" ***!
-  \**************************/
+/*!***************************************!*\
+  !*** external {"this":["wp","i18n"]} ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = wp.i18n;
+(function() { module.exports = this["wp"]["i18n"]; }());
 
 /***/ })
 
