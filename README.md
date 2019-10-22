@@ -1,5 +1,5 @@
-# Glossary Block
+# WP Block Glossary
 
-Adds a definition list block (`<dl>` element). The definition element is really useful!
+Adds a description list (`<dl>` element) to Gutenberg.
 
 Based on [wp-block-description-list](https://github.com/lassemt/wp-block-description-list), but with updated dependencies and a simpler implementation.
