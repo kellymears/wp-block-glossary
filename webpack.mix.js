@@ -1,14 +1,17 @@
-const mix = require(`laravel-mix`)
-
-require(`laravel-mix-wp-blocks`)
-
-const glossary = {
-	js: {
-		src: `./src/entry.js`,
-		dist: `dist/glossary.js`,
-	},
-}
-
+const mix = require(`laravel-mix`);
+require(`laravel-mix-wp-blocks`);
 mix
-	.block(glossary.js.src, glossary.js.dist)
-	.setPublicPath(`./dist`)
+	.ts(`src/index.ts`, `dist/glossary.js`)
+	.css(`src/index.css`, `glossary.css`)
+	.babelConfig({
+		presets: ["@babel/preset-react"],
+	})
+	.webpackConfig({
+		externals: {
+			"@wordpress/block-editor": "wp.blockEditor",
+			"@wordpress/blocks": "wp.blocks",
+			"@wordpress/i18n": "wp.i18n",
+			react: "wp.react",
+		},
+	})
+	.setPublicPath(`./dist`);

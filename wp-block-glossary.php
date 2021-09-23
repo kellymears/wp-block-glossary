@@ -1,19 +1,18 @@
 <?php
 /**
- * Plugin Name: Glossary
+ * Plugin Name: Glossary block
  * Plugin URI: https://github.com/kellymears/wp-block-glossary
  * Description: Glossary block
  * Author: Kelly Mears
  * Author URI: https://kellymears.me
- * Version: 1.1.0
+ * Version: 1.2.0
  * License: MIT
  * License URI: https://github.com/kellymears/wp-block-glossary/tree/master/LICENSE.md
  */
 
-(new class {
-	/** @var string */
-    public static $assetManifest = __DIR__ . '/dist/glossary.asset.php';
+namespace TinyPixel;
 
+(new class {
 	/** @var array */
 	public static $block;
 
@@ -22,26 +21,25 @@
 	 */
 	public function __construct()
 	{
-		if (file_exists(self::$assetManifest)) {
-			$manifest = require self::$assetManifest;
-		}
-
 		self::$block = [
-			'name'         => 'tinyblocks/glossary/js',
-			'url'          => plugins_url('wp-block-glossary/dist/glossary.js'),
-			'dependencies' => $manifest['dependencies'] ?: [],
-			'version'      => $manifest['version'] ?: null,
-			'footer'       => true,
+			'name' => 'tinyblocks/glossary/js',
+			'url' => \plugins_url('wp-block-glossary/dist/glossary.js'),
+			'dependencies' => ['react', 'wp-block-editor', 'wp-blocks', 'wp-i18n'],
+			'version' => null,
+			'footer' => true,
 		];
 	}
 
 	/**
 	 * Class invocation.
+	 *
+	 * @return void
 	 */
-    public function __invoke()
+    public function __invoke(): void
     {
-        add_action('enqueue_block_editor_assets', function () {
-            wp_enqueue_script(...array_values(self::$block));
+        \add_action('enqueue_block_editor_assets', function () {
+            \wp_enqueue_script(...array_values(self::$block));
+						\wp_enqueue_style('tinyblocks/glossary/css', \plugins_url('wp-block-glossary/dist/glossary.css'), [], null, false);
         });
     }
 })();

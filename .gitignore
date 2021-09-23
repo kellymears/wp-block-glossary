@@ -1,1 +1,4 @@
 node_modules
+wordpress
+vendor
+yarn-error.log

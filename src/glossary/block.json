@@ -1,9 +1,0 @@
-{
-	"name": "tinyblocks/glossary",
-	"category": "layout",
-	"attributes": {
-		"verticalAlignment": {
-			"type": "string"
-		}
-	}
-}

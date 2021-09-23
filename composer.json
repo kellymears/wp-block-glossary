@@ -2,14 +2,10 @@
 	"name": "tinypixel/block-glossary",
 	"type": "wordpress-plugin",
 	"version": "1.1.0",
-	"description": "Definition list block for the WordPress 5 block editor",
+	"description": "Definition list block for the WordPress block editor",
 	"keywords": [
-		"laravel",
-		"blade",
-		"template",
 		"wordpress",
-		"gutenberg",
-		"blocks"
+		"gutenberg"
 	],
 	"license": "MIT",
 	"authors": [
@@ -19,5 +15,13 @@
 		}
 	],
 	"minimum-stability": "dev",
-	"prefer-stable": true
+	"prefer-stable": true,
+	"require-dev": {
+		"roots/wordpress": "^5.8"
+	},
+	"autoload": {
+		"files": [
+			"./wordpress/index.php"
+		]
+	}
 }
